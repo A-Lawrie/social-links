@@ -1,0 +1,88 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+}
+
+.container{
+    width: 30%;
+    height: 60%;
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 800px;
+}
+.profile-image{
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+
+
+a{
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 80%;
+    height: 4%;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    text-decoration: solid;
+    font-weight: 500;
+}
+a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+.container p{
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+}
+
+.profile-image img{
+    border-radius: 200px;
+    width: 80px;
+    height: auto;
+}
+.heading h2{
+    color: white;
+}
+.heading p{
+    color: hsl(75, 94%, 57%);
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* Existing CSS */
+/* ... */
+
+/* Add media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust the container width for smaller screens */
+        height: auto; /* Make height auto to fit content */
+    }
+
+    .profile-image img {
+        width: 80px; /* Reduce image size on smaller screens */
+    }
+
+    a {
+        font-size: 14px; /* Adjust font size of links for readability on smaller screens */
+        padding: 8px; /* Adjust padding */
+    }
+}
